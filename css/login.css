@@ -1,0 +1,54 @@
+#h1{
+   text-align: center; 
+   font-size: 60px;
+   margin-top: -600px;
+   margin-bottom: 50px;
+}
+
+.col-1{
+    background-image: url(../img/salmon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+     
+}
+.col-2{
+    
+}
+.col-3 img{
+    height: 400px;
+    width: 500px;
+    margin-left: 1000px;
+    margin-top: -1000px;
+}
+.col-4{
+    height: 50px;
+    margin-left: 800px;
+    margin-top: -1000px;
+}
+.container-2{
+    
+
+}
+
+.aa{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: x-large;
+    
+}
+.submitBtn{
+    margin-left: 900PX;
+    font-size:larger;
+}
+
+    
+
+.container{
+    background-color: beige;
+    height: 1000px;
+}
+.ni{
+    background-color: aquamarine;
+    height: 400px;
+    width: 500px;
+}
