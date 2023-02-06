@@ -1,0 +1,18 @@
+.container{
+    background-color: beige;
+    width: 100%;
+
+}
+
+.col-1 img{
+    height: 50px;
+    width: 50px;
+}
+.col-2 img{
+    margin-top: 200px;
+}
+.col-3{
+    height: 50px;
+    width: 50px;
+    margin-top: 200px;
+}
