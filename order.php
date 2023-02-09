@@ -12,7 +12,8 @@
   
 </head>
 <body>
-    <div class="container bb" style="background-image:url(canteen1.jpg)">
+  <div class="container-fluid dd">
+  <div class="container bb">
         <!-- <img class="aa" src="../img/food.webp"> -->
             <div>
                 <h1 class="arju">Eat Healthy Order Healthy</h1>
@@ -21,10 +22,9 @@
                     <h1 class="arju1">What would you like to order?</h1>
                 </div>
                   
-    </div>
-    <div class="container">
+    
     <div class="row">
-        <div class="col-12 cc">
+        <div class="col-12 d-flex justify-content-center">
             <form method="post" action="" class="itemOrder">
                 <label class="fox">food item</label>
                 <input type="food item" name="food item" required/>
@@ -40,8 +40,8 @@
 
                 <input type="submit" name="submit" value="submit"/>
             </form>
-        </div>
     </div>
 </div>
+  </div>
 </body>
 </html>
