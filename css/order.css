@@ -1,0 +1,23 @@
+.arju{
+    margin-top:-400px;
+    text-align: center;
+    font-size: 40px;
+}
+.arju1{
+    text-align: center;
+    font-size: 40px;
+}
+.container{
+    background-image: url(./img/food.webp);
+    height:60vh;
+    width: 100vw;
+}
+.suju{
+    margin-left: 50px;
+}
+.cc{
+    background-color: black;
+    margin-left: 100px;
+}
+
+
