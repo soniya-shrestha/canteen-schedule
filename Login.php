@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("database.php");
+include("connect.php");
 
 if (isset($_POST['submit'])) {
     $email = $_POST['email'];
@@ -13,10 +13,10 @@ if (isset($_POST['submit'])) {
 
     if ($result->num_rows == 1) {
         $_SESSION['email'] = $row['email'];
-        
+        //echo"<script>window.location='index.php'</script>";
         header('Location:index.php');
     } else {
-        header('Location:login.php');
+        header('Location:Login.php');
     }
 }
 ?>
@@ -32,45 +32,48 @@ if (isset($_POST['submit'])) {
     <title>schedule</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container picture">
         <div class="row">
             <div class="col-1">
                 <img src="../img/salmon.png">
 
             </div>
             <div class="col-2">
-                <img src="../img/pngwing.com.png">
-
-            </div>
-            <div class="col-3">
-                <img src="../img/chicken grill.png">
-
-            </div>
-            <div class="col-4">
                 <img src="../img/breakfast.png">
 
             </div>
+        
+           
+            <div class="col-3">
+                <img src="../img/pngwing.com.png">
+            </div>
 
+            <div class="col-4">
+                <img src="../img/chicken grill.png">
+            </div>
         </div>
+        
     </div>
 
 
 
-    <div class="container">
+    <div class="container form">
     <div class="row">
         <div class="col-12 mt-5">
             <form method="post" action="">
                 <label>Email</label>
                 <input type="email" name="email" required/>
-
+                </br>
                 <label>Password</label>
                 <input type="password" name="password" required/>
-
+                </br>
                 <input type="submit" name="submit" value="Login"/>
             </form>
         </div>
     </div>
 </div>
+
+
 
 </body>
 </html>
