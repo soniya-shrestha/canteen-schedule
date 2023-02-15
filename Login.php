@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("database.php");
+include("connect.php");
 
 if (isset($_POST['submit'])) {
     $email = $_POST['email'];
@@ -11,12 +11,12 @@ if (isset($_POST['submit'])) {
 
     $row = $result->fetch_assoc();
 
-    if ($result->num_rows == 1) {
+    if ($result->num_rows == 0) {
         $_SESSION['email'] = $row['email'];
         
         header('Location:index.php');
     } else {
-        header('Location:login.php');
+        header('Location:Login.php');
     }
 }
 ?>
