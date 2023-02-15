@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 
     $row = $result->fetch_assoc();
 
-    if ($result->num_rows == 1) {
+    if ($result->num_rows == 0) {
         $_SESSION['email'] = $row['email'];
         //echo"<script>window.location='index.php'</script>";
         header('Location:index.php');
