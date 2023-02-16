@@ -1,10 +1,11 @@
 <?php
-session_start();
-include("connect.php");
 
+session_start();
+
+include("connect.php");
 if (isset($_POST['submit'])) {
     $email = $_POST['email'];
-    $password = md5($_POST['password']);
+    $password =$_POST['password'];
 
     $sql = "SELECT id, email, password FROM tbl_user WHERE email = '$email' AND password = '$password'";
     $result = $conn->query($sql);
@@ -13,10 +14,10 @@ if (isset($_POST['submit'])) {
 
     if ($result->num_rows == 0) {
         $_SESSION['email'] = $row['email'];
-        //echo"<script>window.location='index.php'</script>";
+        // echo"<script>window.location='index.php'</script>";
         header('Location:index.php');
     } else {
-        header('Location:Login.php');
+        header('Location:login.php');
     }
 }
 ?>
@@ -29,26 +30,30 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="../css/bootstrap.min.css">
      <link rel="stylesheet" href="../css/schedule.css">
+     
     <title>schedule</title>
 </head>
 <body>
-    <div class="container picture">
+    <div class="container-fluid picture">
         <div class="row">
-            <div class="col-1">
+            <div class="col">
                 <img src="../img/salmon.png">
 
             </div>
-            <div class="col-2">
+            <div class="col">
                 <img src="../img/breakfast.png">
 
             </div>
         
            
-            <div class="col-3">
+            
+        </div>
+        <div class="row">
+        <div class="col">
                 <img src="../img/pngwing.com.png">
             </div>
 
-            <div class="col-4">
+            <div class="col">
                 <img src="../img/chicken grill.png">
             </div>
         </div>
@@ -57,7 +62,7 @@ if (isset($_POST['submit'])) {
 
 
 
-    <div class="container form">
+    <div class="container logInFields">
     <div class="row">
         <div class="col-12 mt-5">
             <form method="post" action="">
