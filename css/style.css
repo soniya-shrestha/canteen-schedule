@@ -6,8 +6,8 @@
 .navigationbar {
     background-color: lightblue;
     width: 100%;
-    height: 90px;
-    padding-top: 25px;
+    height: 70px;
+    padding-bottom: 14px;
     padding-right: 15px;
     position: fixed;
     top: 0;
@@ -17,15 +17,16 @@
 .sab {
     background-color: rgb(186, 141, 186);
     width: 100%;
-    height: 120px;
+    height: 130px;
     line-height: 1;
-    margin-top: 90px;
+    margin-top: 60px;
 
 }
 
 .wel {
     font-size: 40px;
     text-align: center;
+    padding-top: 10px;
 }
 
 .aadim {
@@ -44,19 +45,23 @@
     background-color: aqua;
 
 }
+.content{
+    width: 100%;
+    height:100vh;
+}
 
 .table {
     width: 100%;
     min-height: 100px;
     position: relative;
-    top: -500px;
+    /* top: -500px; */
     border: 2px solid black;
-
+    margin-top: 40px;
 }
 
 .imgcontent {
     background-image: url(../img/a.jpg);
-    opacity: 50%;
+    /* opacity: 50%; */
     /* height: 500px; */
     width: 100%;
 }
@@ -68,14 +73,58 @@
 
 .foo {
     background-color: pink;
-    width: 100%;
-    height: 150px;
+   display: flex;
+    height: 250px;
     text-align: center;
     font-size: 60px;
 
+}
+
+.disc{
+    
+    height: 250px;
+    font-size: 50px;
+    flex-grow: 1;
+   
+}
+.contact{
+   
+    height: 250px;
+    background-color:purple;
+}
+
+.map{
+    width: 400px;
+    height: 250px;
+    background-color: red;
+    float: right;
 }
 
 .create {
 
     padding: 100px;
 }
+
+.nav-item .react{
+    text-decoration: none;
+    position: absolute;
+    top: 16px;
+    left: 285px;
+    font-size: 16px;
+}
+
+/* //gallery */
+
+.p{
+    font-size: 30px;
+    width: 100%;
+    height: 30px;
+}
+
+.con{
+    width: 100%;
+    height: 700px;
+    background-color: aqua;
+}
+
+

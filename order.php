@@ -32,11 +32,11 @@
                 <label>quantity</label>
                 <input type="quantity" name="quantity" required/>
                 </br>
-                <label>price</label>
+                <!-- <label>price</label>
                 <input type="price" name="price" required/>
                 </br>
                 <label>time</label>
-                <input type="time" name="timetime" required/>
+                <input type="time" name="timetime" required/> -->
 
                 <input type="submit" name="submit" value="submit"/>
             </form>
