@@ -31,16 +31,18 @@ if (isset($_POST['submit'])) {
      <link rel="stylesheet" href="../css/bootstrap.min.css">
      <link rel="stylesheet" href="../css/schedule.css">
      
+
+     
     <title>schedule</title>
 </head>
 <body>
     <div class="container-fluid picture">
         <div class="row">
-            <div class="col">
+            <div class="col so">
                 <img src="../img/salmon.png">
 
             </div>
-            <div class="col">
+            <div class="col ni">
                 <img src="../img/breakfast.png">
 
             </div>
@@ -49,11 +51,11 @@ if (isset($_POST['submit'])) {
             
         </div>
         <div class="row">
-        <div class="col">
+        <div class="col ya">
                 <img src="../img/pngwing.com.png">
             </div>
 
-            <div class="col">
+            <div class="col sh">
                 <img src="../img/chicken grill.png">
             </div>
         </div>
@@ -65,19 +67,21 @@ if (isset($_POST['submit'])) {
     <div class="container logInFields">
     <div class="row">
         <div class="col-12 mt-5">
-            <form method="post" action="">
+            <form  action="index.php" method="post">
+                <h2>Please login here</h2>
                 <label>Email</label>
                 <input type="email" name="email" required/>
-                </br>
+                
                 <label>Password</label>
+                
                 <input type="password" name="password" required/>
-                </br>
-                <input type="submit" name="submit" value="Login"/>
+                <button type="submit">login</button>
+
+                <!-- <input type="submit" name="submit" value="Login"/> -->
             </form>
         </div>
     </div>
 </div>
-
 
 
 </body>

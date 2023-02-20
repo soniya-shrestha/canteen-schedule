@@ -12,18 +12,68 @@
     
 }
 
-.col img{
-        height:500px;
-        width:100%;
-        
-
+.so img{
+        height:450px;
+        width:450px;
 }
+.ni img{
+    height: 500px;
+    width: 400px;
+    margin-left: 230px;
+    margin-top: -50px;
+}
+.ya img{
+    height: 400px;
+    width: 400px; 
+    margin-left: 100px;
+}
+.sh img{
+    height: 400px;
+    width: 400px;
+    margin-left: 100px; 
+    margin-top: -50px;
+}
+
 .logInFields{
     position:relative;
-    top:-380px;
-    left:500px;
+    top:-600px;
+    left:400px;
 }
 
 
-
-
+form {
+    width:400px;
+    
+    padding: 30px;
+    
+    border-radius: 15px;
+}
+input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 18px;
+    color: #888;
+    
+}
+button{
+    float: right;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius:5px ;
+    margin-right:10px ;
+    border: none;
+}
+button:hover{
+    opacity: .7;
+}

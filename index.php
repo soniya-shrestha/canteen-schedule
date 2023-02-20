@@ -2,6 +2,7 @@
 include('connect.php');
 $sql = "SELECT id, dishname, price FROM tbl_schedule";
 $result = $conn->query($sql);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
