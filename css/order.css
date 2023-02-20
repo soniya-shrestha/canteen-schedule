@@ -1,22 +1,20 @@
 
-.arju{
+body{
+    background-image:url(../img/food.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:100vw;
+    overflow: hidden;
+}
+.aarju{
     /* margin-top:-400px; */
     text-align: center;
     font-size: 40px;
-    margin-bottom: 150px;
+    margin-top: 250px;
 }
 .arju1{
     text-align: center;
     font-size: 40px;
     margin-bottom: 150px;
 }
-
-.suju{
-    margin-left: 50px;
-}
-.dd{
-    height:100vh;
-    width:100vw;
-    background-image:url(../img/food.webp);
-}
-
